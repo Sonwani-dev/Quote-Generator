@@ -1,0 +1,71 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container */
+#app {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+#app:hover {
+  transform: translateY(-5px);
+}
+
+/* Quote text */
+#quote {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Author text */
+#author {
+  font-size: 1rem;
+  color: #10b981;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+/* Button */
+#generate {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  background: #667eea;
+  color: rgb(109, 7, 7);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button hover */
+#generate:hover {
+  background: #764ba2;
+  transform: scale(1.05);
+}
+
+/* Button click */
+#generate:active {
+  transform: scale(0.95);
+}
